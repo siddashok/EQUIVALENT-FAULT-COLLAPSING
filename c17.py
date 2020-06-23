@@ -7,7 +7,7 @@ list123=[]
 countgate=0
 f2=f3=f4=f5=f6=f7=f8=f9=f10=0
 
-with open("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
+with open("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
    for num,line in enumerate(fp,1):
        if 'AND2X1' in line:
          countgate=countgate+1
@@ -20,14 +20,14 @@ with open("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as f
 
            
 
-with open("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
+with open("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
    for num,line in enumerate(fp,1):
       #if 'XOR2X1' not in line:
          if 'input' in line:
             x=re.split(r'[,\s;]+', line)
             inputy=len(x)-2
             
-with open("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
+with open("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
    for num,line in enumerate(fp,1):
        if 'fanout2' in line:
          f2=f2+1
@@ -51,7 +51,7 @@ fall=(f2*2)+(f3*3)+(f4*4)+(f5*5)+(f6*6)+(f7*7)+(f8*8)+(f9*9)
           
 
 
-with open("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
+with open("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
    for num,line in enumerate(fp,1):
       if 'XOR2X1' not in line:
          if 'input' in line:
@@ -100,7 +100,7 @@ w2 = list(map(( lambda x:  x + '(stk1)'), my_set))
 w3= w1+w2
 w33=w1+w2
 lengthh=len(w3)
-with open ("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17_BF.txt","w")as fa:
+with open ("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17_BF.txt","w")as fa:
    for line in w3:
        fa.write(line+"\n")
    fa.write("\n")
@@ -115,7 +115,7 @@ woiA = list(map(( lambda x:  '.A(' + x + ')' ),my_set))
 woiB = list(map(( lambda x:  '.B(' + x + ')' ),my_set))
 woiAB= woiA+woiB
 
-with open("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
+with open("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17.v") as fp:
     for num,line in enumerate(fp,1):
       #if 'XOR2X1' not in line:
          if 'AND2X1' in line:
@@ -202,7 +202,7 @@ print("Collapse ratio: ", aw3/((countgate+inputy+fall)*2) )
 cr=(aw3/((countgate+inputy+fall)*2))
 #print(cr)
 
-with open ("C:\\Users\\Rachit M Sood\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17_AF.txt","w")as fa:
+with open ("C:\\Users\\Siddharth\\\Desktop\\Hw2\\Hw2\\Benchmark\\c17_AF.txt","w")as fa:
    for line in w3:
        fa.write(line+"\n")
    fa.write("\n")
